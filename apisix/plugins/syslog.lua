@@ -42,7 +42,8 @@ local schema = {
         tls = {type = "boolean", default = false},
         batch_max_size = {type = "integer", minimum = 1, default = 1000},
         buffer_duration = {type = "integer", minimum = 1, default = 60},
-        include_req_body = {type = "boolean", default = false}
+        include_req_body = {type = "boolean", default = false},
+        include_res_body = {type = "boolean", default = false}
     },
     required = {"host", "port"}
 }

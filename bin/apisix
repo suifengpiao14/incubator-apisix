@@ -403,6 +403,7 @@ http {
         }
 
         location / {
+            set $response_body        '';
             set $upstream_mirror_host        '';
             set $upstream_scheme             'http';
             set $upstream_host               $host;

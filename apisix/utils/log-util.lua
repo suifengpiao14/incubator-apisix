@@ -69,6 +69,9 @@ local function get_full_log(ngx, conf)
         end
     end
 
+    if conf.include_res_body then
+        log.response.body = ngx.var.response_body
+    end
     return log
 end
 
